@@ -24,7 +24,7 @@ const sheets = google.sheets({ version: "v4", auth });
 
 // Configuration
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
-const RANGE = "Sheet1!A2:E"; // Assuming headers are in row 1
+const RANGE = "ACTIVE!A4:E"; // Assuming headers are in row 1
 
 // Get stamp data for a specific user number
 app.get("/stamps/:userNo", async (req, res) => {
