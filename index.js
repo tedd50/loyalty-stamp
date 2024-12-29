@@ -26,7 +26,7 @@ const sheets = google.sheets({ version: "v4", auth });
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
 const SHEET_NAME = "ACTIVE";
 const HEADER_RANGE = `${SHEET_NAME}!A1:B2`; // For Year and Quarter
-const DATA_RANGE = `${SHEET_NAME}!A4:AE`; // From A4 to AE for all stamp data
+const DATA_RANGE = `${SHEET_NAME}!A4:AF`; // From A4 to AE for all stamp data
 
 // Get header information (Year and Quarter)
 async function getHeaderInfo() {
